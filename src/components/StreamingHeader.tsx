@@ -1,4 +1,4 @@
-import { Search, Bell, User, Menu } from "lucide-react";
+import { Search, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { SidebarTrigger } from "@/components/ui/sidebar";
@@ -45,14 +45,8 @@ const StreamingHeader = () => {
           </form>
         </div>
 
-        {/* Right section with user actions */}
+        {/* Right section - removed user icons as requested */}
         <div className="flex items-center space-x-3">
-          <Button variant="ghost" size="icon" className="hover:text-streaming-red transition-colors">
-            <Bell className="h-5 w-5" />
-          </Button>
-          <Button variant="ghost" size="icon" className="hover:text-streaming-red transition-colors">
-            <User className="h-5 w-5" />
-          </Button>
         </div>
       </div>
     </header>

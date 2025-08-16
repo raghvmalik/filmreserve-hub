@@ -1,8 +1,8 @@
 import { Movie } from '@/contexts/WatchlistContext';
 
 // Import all movie posters
-import dunePartTwo from '@/assets/dune-2024.jpg';
-import oppenheimer from '@/assets/oppenheimer-correct.jpg';
+import dunePartTwo from '@/assets/dune-part-two-correct.jpg';
+import oppenheimer from '@/assets/oppenheimer-fixed.jpg';
 import barbie from '@/assets/barbie-correct.jpg';
 import spiderVerse from '@/assets/spider-man-across-spider-verse.jpg';
 import johnWick4 from '@/assets/john-wick-chapter-4.jpg';
@@ -13,18 +13,18 @@ import theBear from '@/assets/the-bear-correct.jpg';
 import theLastOfUs from '@/assets/the-last-of-us-correct.jpg';
 import heroImage from '@/assets/hero-banner.jpg';
 import avatar2 from '@/assets/avatar-2.jpg';
-import topGunMaverick from '@/assets/top-gun-maverick.jpg';
-import blackPanther from '@/assets/black-panther.jpg';
-import parasite from '@/assets/parasite-2019.jpg';
+import topGunMaverick from '@/assets/top-gun-maverick-correct.jpg';
+import blackPanther from '@/assets/black-panther-correct.jpg';
+import parasite from '@/assets/parasite-correct.jpg';
 import theBatman from '@/assets/batman-2022.jpg';
-import everythingEverywhere from '@/assets/everything-everywhere-2022.jpg';
+import everythingEverywhere from '@/assets/everything-everywhere-correct.jpg';
 import doctorStrange2 from '@/assets/doctor-strange-2.jpg';
-import squidGame from '@/assets/squid-game-correct.jpg';
-import moneyHeist from '@/assets/money-heist-correct.jpg';
+import squidGame from '@/assets/squid-game-fixed.jpg';
+import moneyHeist from '@/assets/money-heist-fixed.jpg';
 import mirzapur from '@/assets/mirzapur-correct.jpg';
 import scam1992 from '@/assets/scam-1992-correct.jpg';
 import breakingBad from '@/assets/breaking-bad-correct.jpg';
-import bahubali2 from '@/assets/bahubali-2.jpg';
+import bahubali2 from '@/assets/baahubali-2-correct.jpg';
 import minionsRiseOfGru from '@/assets/minions-rise-gru-correct.jpg';
 
 export const moviesData: Movie[] = [
