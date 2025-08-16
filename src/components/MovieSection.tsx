@@ -3,15 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import MovieCard from "./MovieCard";
 
-interface Movie {
-  id: number;
-  title: string;
-  image: string;
-  year: string;
-  rating: string;
-  genre: string;
-  description?: string;
-}
+import { Movie } from "@/contexts/WatchlistContext";
 
 interface MovieSectionProps {
   title: string;
@@ -41,12 +33,7 @@ const MovieSection = ({ title, movies, size = "medium" }: MovieSectionProps) => 
           {movies.map((movie) => (
             <MovieCard
               key={movie.id}
-              title={movie.title}
-              image={movie.image}
-              year={movie.year}
-              rating={movie.rating}
-              genre={movie.genre}
-              description={movie.description}
+              {...movie}
               size={size}
             />
           ))}

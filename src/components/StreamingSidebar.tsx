@@ -83,6 +83,7 @@ export function StreamingSidebar() {
                     variant="ghost"
                     size="sm"
                     className="w-full justify-start text-sidebar-foreground/70 hover:text-streaming-red hover:bg-sidebar-accent/30 transition-colors"
+                    onClick={() => window.location.href = `/genre?name=${encodeURIComponent(genre)}`}
                   >
                     {genre}
                   </Button>
