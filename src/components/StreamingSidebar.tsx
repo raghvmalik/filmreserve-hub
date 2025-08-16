@@ -24,7 +24,7 @@ const navigationItems = [
 ];
 
 const genres = [
-  "Action", "Comedy", "Drama", "Horror", "Sci-Fi", "Romance", "Documentary", "Animation"
+  "Action", "Comedy", "Drama", "Horror", "Sci-Fi", "Crime", "Thriller", "Animation", "Biography", "Family", "Fantasy", "Adventure"
 ];
 
 export function StreamingSidebar() {

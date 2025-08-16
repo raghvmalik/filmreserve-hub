@@ -1,9 +1,9 @@
 import { Movie } from '@/contexts/WatchlistContext';
 
 // Import all movie posters
-import dunePartTwo from '@/assets/dune-part-two.jpg';
-import oppenheimer from '@/assets/oppenheimer.jpg';
-import barbie from '@/assets/barbie.jpg';
+import dunePartTwo from '@/assets/dune-2024.jpg';
+import oppenheimer from '@/assets/oppenheimer-2023.jpg';
+import barbie from '@/assets/barbie-2023.jpg';
 import spiderVerse from '@/assets/spider-verse.jpg';
 import johnWick4 from '@/assets/john-wick-4.jpg';
 import wednesday from '@/assets/wednesday.jpg';
@@ -15,9 +15,9 @@ import heroImage from '@/assets/hero-banner.jpg';
 import avatar2 from '@/assets/avatar-2.jpg';
 import topGunMaverick from '@/assets/top-gun-maverick.jpg';
 import blackPanther from '@/assets/black-panther.jpg';
-import parasite from '@/assets/parasite.jpg';
-import theBatman from '@/assets/the-batman.jpg';
-import everythingEverywhere from '@/assets/everything-everywhere.jpg';
+import parasite from '@/assets/parasite-2019.jpg';
+import theBatman from '@/assets/batman-2022.jpg';
+import everythingEverywhere from '@/assets/everything-everywhere-2022.jpg';
 import doctorStrange2 from '@/assets/doctor-strange-2.jpg';
 import squidGame from '@/assets/squid-game.jpg';
 import moneyHeist from '@/assets/money-heist.jpg';
@@ -34,13 +34,14 @@ export const moviesData: Movie[] = [
     image: avatar2,
     year: "2022",
     rating: "7.6",
-    genre: "Sci-Fi",
+    genre: "Adventure",
     type: "movie",
     runtime: "3h 12m",
     description: "Jake Sully lives with his newfound family formed on the planet of Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their planet.",
     director: "James Cameron",
     cast: ["Sam Worthington", "Zoe Saldaña", "Sigourney Weaver"],
-    streamingUrl: "https://www.disneyplus.com"
+    streamingUrl: "https://archive.org/details/movies",
+    trailer: "https://www.youtube.com/watch?v=d9MyW72ELq0"
   },
   {
     id: 2,
@@ -54,7 +55,8 @@ export const moviesData: Movie[] = [
     description: "After thirty years, Maverick is still pushing the envelope as a top naval aviator, but must confront ghosts of his past when he leads TOP GUN's elite graduates on a mission that demands the ultimate sacrifice from those chosen to fly it.",
     director: "Joseph Kosinski",
     cast: ["Tom Cruise", "Jennifer Connelly", "Miles Teller"],
-    streamingUrl: "https://www.paramountplus.com"
+    streamingUrl: "https://archive.org/details/movies",
+    trailer: "https://www.youtube.com/watch?v=qSqVVswa420"
   },
   {
     id: 3,
@@ -68,7 +70,8 @@ export const moviesData: Movie[] = [
     description: "The people of Wakanda fight to protect their home from intervening world powers as they mourn the death of King T'Challa.",
     director: "Ryan Coogler",
     cast: ["Angela Bassett", "Letitia Wright", "Lupita Nyong'o"],
-    streamingUrl: "https://www.disneyplus.com"
+    streamingUrl: "https://archive.org/details/movies",
+    trailer: "https://www.youtube.com/watch?v=_Z3QKkl1WyM"
   },
   {
     id: 4,
@@ -76,13 +79,14 @@ export const moviesData: Movie[] = [
     image: parasite,
     year: "2019",
     rating: "8.5",
-    genre: "Thriller",
+    genre: "Drama",
     type: "movie",
     runtime: "2h 12m",
     description: "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
     director: "Bong Joon-ho",
     cast: ["Song Kang-ho", "Lee Sun-kyun", "Cho Yeo-jeong"],
-    streamingUrl: "https://www.hulu.com"
+    streamingUrl: "https://archive.org/details/movies",
+    trailer: "https://www.youtube.com/watch?v=5xH0HfJHsaY"
   },
   {
     id: 5,
@@ -90,13 +94,14 @@ export const moviesData: Movie[] = [
     image: theBatman,
     year: "2022",
     rating: "7.8",
-    genre: "Action",
+    genre: "Crime",
     type: "movie",
     runtime: "2h 56m",
     description: "When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the city's hidden corruption and question his family's involvement.",
     director: "Matt Reeves",
     cast: ["Robert Pattinson", "Zoë Kravitz", "Jeffrey Wright"],
-    streamingUrl: "https://www.hbomax.com"
+    streamingUrl: "https://archive.org/details/movies",
+    trailer: "https://www.youtube.com/watch?v=mqqft2x_Aa4"
   },
   {
     id: 6,
@@ -104,13 +109,14 @@ export const moviesData: Movie[] = [
     image: everythingEverywhere,
     year: "2022",
     rating: "7.8",
-    genre: "Sci-Fi",
+    genre: "Comedy",
     type: "movie",
     runtime: "2h 19m",
     description: "An aging Chinese immigrant is swept up in an insane adventure, where she alone can save what's important to her by connecting with the lives she could have led in other universes.",
     director: "Daniels",
     cast: ["Michelle Yeoh", "Stephanie Hsu", "Ke Huy Quan"],
-    streamingUrl: "https://www.amazon.com/prime"
+    streamingUrl: "https://archive.org/details/movies",
+    trailer: "https://www.youtube.com/watch?v=WLJJQfUCUoQ"
   },
   {
     id: 7,
@@ -118,13 +124,14 @@ export const moviesData: Movie[] = [
     image: doctorStrange2,
     year: "2022",
     rating: "6.9",
-    genre: "Action",
+    genre: "Fantasy",
     type: "movie",
     runtime: "2h 6m",
     description: "Dr. Stephen Strange casts a forbidden spell that opens the doorway to the multiverse, including alternate versions of himself, whose threat to humanity is too great for the combined forces of Strange, Wong, and Wanda Maximoff.",
     director: "Sam Raimi",
     cast: ["Benedict Cumberbatch", "Elizabeth Olsen", "Chiwetel Ejiofor"],
-    streamingUrl: "https://www.disneyplus.com"
+    streamingUrl: "https://archive.org/details/movies",
+    trailer: "https://www.youtube.com/watch?v=aWzlQ2N6qqg"
   },
   {
     id: 8,
@@ -138,7 +145,8 @@ export const moviesData: Movie[] = [
     description: "Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family.",
     director: "Denis Villeneuve",
     cast: ["Timothée Chalamet", "Zendaya", "Rebecca Ferguson"],
-    streamingUrl: "https://www.max.com"
+    streamingUrl: "https://archive.org/details/movies",
+    trailer: "https://www.youtube.com/watch?v=Way9Dexny3w"
   },
   {
     id: 9,
@@ -152,7 +160,8 @@ export const moviesData: Movie[] = [
     description: "The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb.",
     director: "Christopher Nolan",
     cast: ["Cillian Murphy", "Emily Blunt", "Robert Downey Jr."],
-    streamingUrl: "https://www.amazon.com/prime"
+    streamingUrl: "https://archive.org/details/movies",
+    trailer: "https://www.youtube.com/watch?v=uYPbbksJxIg"
   },
   {
     id: 10,
@@ -166,7 +175,8 @@ export const moviesData: Movie[] = [
     description: "Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land.",
     director: "Greta Gerwig",
     cast: ["Margot Robbie", "Ryan Gosling", "America Ferrera"],
-    streamingUrl: "https://www.max.com"
+    streamingUrl: "https://archive.org/details/movies",
+    trailer: "https://www.youtube.com/watch?v=pBk4NYhWNMM"
   },
   {
     id: 11,
@@ -180,7 +190,8 @@ export const moviesData: Movie[] = [
     description: "Miles Morales catapults across the Multiverse, where he encounters a team of Spider-People charged with protecting its very existence.",
     director: "Joaquim Dos Santos",
     cast: ["Shameik Moore", "Hailee Steinfeld", "Brian Tyree Henry"],
-    streamingUrl: "https://www.netflix.com"
+    streamingUrl: "https://archive.org/details/movies",
+    trailer: "https://www.youtube.com/watch?v=cqGjhVJWtEg"
   },
   {
     id: 12,
@@ -194,7 +205,8 @@ export const moviesData: Movie[] = [
     description: "John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy.",
     director: "Chad Stahelski",
     cast: ["Keanu Reeves", "Donnie Yen", "Bill Skarsgård"],
-    streamingUrl: "https://www.amazon.com/prime"
+    streamingUrl: "https://archive.org/details/movies",
+    trailer: "https://www.youtube.com/watch?v=qEVUtrk8_B4"
   },
   {
     id: 13,
@@ -208,7 +220,8 @@ export const moviesData: Movie[] = [
     description: "When Shiva, the son of Bahubali, learns about his heritage, he begins to look for answers. His story is juxtaposed with past events that unfolded in the Mahishmati Kingdom.",
     director: "S.S. Rajamouli",
     cast: ["Prabhas", "Rana Daggubati", "Anushka Shetty"],
-    streamingUrl: "https://www.amazon.com/prime"
+    streamingUrl: "https://archive.org/details/movies",
+    trailer: "https://www.youtube.com/watch?v=G62HrubdD6o"
   },
   {
     id: 14,
@@ -222,7 +235,8 @@ export const moviesData: Movie[] = [
     description: "The untold story of one twelve-year-old's dream to become the world's greatest supervillain.",
     director: "Kyle Balda",
     cast: ["Steve Carell", "Pierre Coffin", "Alan Arkin"],
-    streamingUrl: "https://www.peacocktv.com"
+    streamingUrl: "https://archive.org/details/movies",
+    trailer: "https://www.youtube.com/watch?v=p_CWaOAmx5s"
   }
 ];
 
@@ -238,7 +252,8 @@ export const tvShowsData: Movie[] = [
     runtime: "60min",
     description: "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits with deadly high stakes.",
     cast: ["Lee Jung-jae", "Park Hae-soo", "Wi Ha-jun"],
-    streamingUrl: "https://www.netflix.com"
+    streamingUrl: "https://archive.org/details/television",
+    trailer: "https://www.youtube.com/watch?v=oqxAJKy0ii4"
   },
   {
     id: 102,
@@ -251,7 +266,8 @@ export const tvShowsData: Movie[] = [
     runtime: "50min",
     description: "An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - stealing 2.4 billion euros from the Royal Mint of Spain.",
     cast: ["Úrsula Corberó", "Álvaro Morte", "Itziar Ituño"],
-    streamingUrl: "https://www.netflix.com"
+    streamingUrl: "https://archive.org/details/television",
+    trailer: "https://www.youtube.com/watch?v=_InqQJRqGW4"
   },
   {
     id: 103,
@@ -259,12 +275,13 @@ export const tvShowsData: Movie[] = [
     image: breakingBad,
     year: "2008",
     rating: "9.5",
-    genre: "Crime",
+    genre: "Drama",
     type: "tv",
     runtime: "47min",
     description: "A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future.",
     cast: ["Bryan Cranston", "Aaron Paul", "Anna Gunn"],
-    streamingUrl: "https://www.netflix.com"
+    streamingUrl: "https://archive.org/details/television",
+    trailer: "https://www.youtube.com/watch?v=HhesaQXLuRY"
   },
   {
     id: 104,
@@ -277,7 +294,8 @@ export const tvShowsData: Movie[] = [
     runtime: "45min",
     description: "A shocking incident at a wedding procession ignites a series of events entangling the lives of two families in the lawless city of Mirzapur.",
     cast: ["Pankaj Tripathi", "Ali Fazal", "Vikrant Massey"],
-    streamingUrl: "https://www.primevideo.com"
+    streamingUrl: "https://archive.org/details/television",
+    trailer: "https://www.youtube.com/watch?v=ZNeGF-PvRHM"
   },
   {
     id: 105,
@@ -290,7 +308,8 @@ export const tvShowsData: Movie[] = [
     runtime: "50min",
     description: "Set in 1980s and 90s Bombay, it follows the life of Harshad Mehta, a stockbroker who took the stock market to dizzying heights and his catastrophic downfall.",
     cast: ["Pratik Gandhi", "Shreya Dhanwanthary", "Hemant Kher"],
-    streamingUrl: "https://www.sonyliv.com"
+    streamingUrl: "https://archive.org/details/television",
+    trailer: "https://www.youtube.com/watch?v=c91XUyg9gWE"
   },
   {
     id: 106,
@@ -298,12 +317,13 @@ export const tvShowsData: Movie[] = [
     image: wednesday,
     year: "2022",
     rating: "8.1",
-    genre: "Comedy",
+    genre: "Horror",
     type: "tv",
     runtime: "45min",
     description: "Follows Wednesday Addams' years as a student at Nevermore Academy, where she attempts to master her emerging psychic ability.",
     cast: ["Jenna Ortega", "Hunter Doohan", "Percy Hynes White"],
-    streamingUrl: "https://www.netflix.com"
+    streamingUrl: "https://archive.org/details/television",
+    trailer: "https://www.youtube.com/watch?v=Di310WS8zLk"
   },
   {
     id: 107,
@@ -316,7 +336,8 @@ export const tvShowsData: Movie[] = [
     runtime: "60min",
     description: "An internal succession war within House Targaryen at the height of its power, 172 years before the birth of Daenerys Targaryen.",
     cast: ["Paddy Considine", "Emma D'Arcy", "Matt Smith"],
-    streamingUrl: "https://www.hbomax.com"
+    streamingUrl: "https://archive.org/details/television",
+    trailer: "https://www.youtube.com/watch?v=DotnJ7tTA34"
   },
   {
     id: 108,
@@ -329,7 +350,8 @@ export const tvShowsData: Movie[] = [
     runtime: "50min",
     description: "When a young boy disappears, his mother, a police chief and his friends must confront terrifying supernatural forces.",
     cast: ["Millie Bobby Brown", "Finn Wolfhard", "Winona Ryder"],
-    streamingUrl: "https://www.netflix.com"
+    streamingUrl: "https://archive.org/details/television",
+    trailer: "https://www.youtube.com/watch?v=b9EkMc79ZSU"
   },
   {
     id: 109,
@@ -342,7 +364,8 @@ export const tvShowsData: Movie[] = [
     runtime: "30min",
     description: "A young chef from the fine dining world returns to Chicago to run his family's sandwich shop.",
     cast: ["Jeremy Allen White", "Ebon Moss-Bachrach", "Abby Elliott"],
-    streamingUrl: "https://www.hulu.com"
+    streamingUrl: "https://archive.org/details/television",
+    trailer: "https://www.youtube.com/watch?v=y-cqqAJIXhs"
   },
   {
     id: 110,
@@ -355,7 +378,8 @@ export const tvShowsData: Movie[] = [
     runtime: "60min",
     description: "Joel and Ellie, a pair connected through the harshness of the world they live in, are forced to survive under threatening circumstances.",
     cast: ["Pedro Pascal", "Bella Ramsey", "Anna Torv"],
-    streamingUrl: "https://www.hbomax.com"
+    streamingUrl: "https://archive.org/details/television",
+    trailer: "https://www.youtube.com/watch?v=uLtkt8BonwM"
   }
 ];
 
