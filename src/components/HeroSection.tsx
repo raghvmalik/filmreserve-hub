@@ -1,7 +1,7 @@
 import { Play, Info, Volume2, VolumeX } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useRef } from "react";
-import heroBanner from "@/assets/dune-2024.jpg";
+import heroBanner from "@/assets/dune-part-two-correct.jpg";
 
 const HeroSection = () => {
   const [isMuted, setIsMuted] = useState(true);
