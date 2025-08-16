@@ -17,6 +17,7 @@ const MovieCard = ({
   description,
   type,
   trailer,
+  streamingUrl,
   size = "medium"
 }: MovieCardProps) => {
   const { addToWatchlist, removeFromWatchlist, addToRecent, isInWatchlist } = useWatchlist();
@@ -28,12 +29,14 @@ const MovieCard = ({
   };
 
   const movieData: Movie = {
-    id, title, image, year, rating, genre, description, type, trailer
+    id, title, image, year, rating, genre, description, type, trailer, streamingUrl
   };
 
   const handlePlay = () => {
     addToRecent(movieData);
-    if (trailer) {
+    if (streamingUrl) {
+      window.open(streamingUrl, '_blank');
+    } else if (trailer) {
       window.open(trailer, '_blank');
     } else {
       // For demo purposes, just show a message

@@ -24,7 +24,10 @@ const StreamingHeader = () => {
           <SidebarTrigger className="text-foreground hover:text-streaming-red transition-colors">
             <Menu className="h-5 w-5" />
           </SidebarTrigger>
-          <h1 className="text-2xl font-bold bg-gradient-accent bg-clip-text text-transparent cursor-pointer" onClick={() => navigate('/')}>
+          <h1 
+            className="text-2xl font-bold bg-gradient-accent bg-clip-text text-transparent cursor-pointer hover:scale-105 transition-transform" 
+            onClick={() => navigate('/')}
+          >
             FilmReserve
           </h1>
         </div>

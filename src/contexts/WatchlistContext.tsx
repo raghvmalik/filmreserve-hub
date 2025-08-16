@@ -14,6 +14,7 @@ export interface Movie {
   cast?: string[];
   director?: string;
   trailer?: string;
+  streamingUrl?: string;
 }
 
 interface WatchlistState {

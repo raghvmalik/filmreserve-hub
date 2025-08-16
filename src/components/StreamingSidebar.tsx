@@ -35,8 +35,12 @@ export function StreamingSidebar() {
 
   const isActive = (path: string) => currentPath === path;
 
+  if (collapsed) {
+    return null; // Hide sidebar completely when collapsed
+  }
+
   return (
-    <Sidebar className={collapsed ? "w-16" : "w-64"} collapsible="icon">
+    <Sidebar className="w-64" collapsible="icon">
       <SidebarContent className="bg-sidebar border-r border-sidebar-border">
         {/* Main Navigation */}
         <SidebarGroup>

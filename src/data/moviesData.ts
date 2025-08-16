@@ -12,10 +12,122 @@ import strangerThings from '@/assets/stranger-things.jpg';
 import theBear from '@/assets/the-bear.jpg';
 import theLastOfUs from '@/assets/the-last-of-us.jpg';
 import heroImage from '@/assets/hero-banner.jpg';
+import avatar2 from '@/assets/avatar-2.jpg';
+import topGunMaverick from '@/assets/top-gun-maverick.jpg';
+import blackPanther from '@/assets/black-panther.jpg';
+import parasite from '@/assets/parasite.jpg';
+import theBatman from '@/assets/the-batman.jpg';
+import everythingEverywhere from '@/assets/everything-everywhere.jpg';
+import doctorStrange2 from '@/assets/doctor-strange-2.jpg';
+import squidGame from '@/assets/squid-game.jpg';
+import moneyHeist from '@/assets/money-heist.jpg';
+import mirzapur from '@/assets/mirzapur.jpg';
+import scam1992 from '@/assets/scam-1992.jpg';
+import breakingBad from '@/assets/breaking-bad.jpg';
+import bahubali2 from '@/assets/bahubali-2.jpg';
+import minionsRiseOfGru from '@/assets/minions-rise-of-gru.jpg';
 
 export const moviesData: Movie[] = [
   {
     id: 1,
+    title: "Avatar: The Way of Water",
+    image: avatar2,
+    year: "2022",
+    rating: "7.6",
+    genre: "Sci-Fi",
+    type: "movie",
+    runtime: "3h 12m",
+    description: "Jake Sully lives with his newfound family formed on the planet of Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their planet.",
+    director: "James Cameron",
+    cast: ["Sam Worthington", "Zoe Saldaña", "Sigourney Weaver"],
+    streamingUrl: "https://www.disneyplus.com"
+  },
+  {
+    id: 2,
+    title: "Top Gun: Maverick",
+    image: topGunMaverick,
+    year: "2022",
+    rating: "8.3",
+    genre: "Action",
+    type: "movie",
+    runtime: "2h 11m",
+    description: "After thirty years, Maverick is still pushing the envelope as a top naval aviator, but must confront ghosts of his past when he leads TOP GUN's elite graduates on a mission that demands the ultimate sacrifice from those chosen to fly it.",
+    director: "Joseph Kosinski",
+    cast: ["Tom Cruise", "Jennifer Connelly", "Miles Teller"],
+    streamingUrl: "https://www.paramountplus.com"
+  },
+  {
+    id: 3,
+    title: "Black Panther: Wakanda Forever",
+    image: blackPanther,
+    year: "2022",
+    rating: "6.7",
+    genre: "Action",
+    type: "movie",
+    runtime: "2h 41m",
+    description: "The people of Wakanda fight to protect their home from intervening world powers as they mourn the death of King T'Challa.",
+    director: "Ryan Coogler",
+    cast: ["Angela Bassett", "Letitia Wright", "Lupita Nyong'o"],
+    streamingUrl: "https://www.disneyplus.com"
+  },
+  {
+    id: 4,
+    title: "Parasite",
+    image: parasite,
+    year: "2019",
+    rating: "8.5",
+    genre: "Thriller",
+    type: "movie",
+    runtime: "2h 12m",
+    description: "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
+    director: "Bong Joon-ho",
+    cast: ["Song Kang-ho", "Lee Sun-kyun", "Cho Yeo-jeong"],
+    streamingUrl: "https://www.hulu.com"
+  },
+  {
+    id: 5,
+    title: "The Batman",
+    image: theBatman,
+    year: "2022",
+    rating: "7.8",
+    genre: "Action",
+    type: "movie",
+    runtime: "2h 56m",
+    description: "When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the city's hidden corruption and question his family's involvement.",
+    director: "Matt Reeves",
+    cast: ["Robert Pattinson", "Zoë Kravitz", "Jeffrey Wright"],
+    streamingUrl: "https://www.hbomax.com"
+  },
+  {
+    id: 6,
+    title: "Everything Everywhere All at Once",
+    image: everythingEverywhere,
+    year: "2022",
+    rating: "7.8",
+    genre: "Sci-Fi",
+    type: "movie",
+    runtime: "2h 19m",
+    description: "An aging Chinese immigrant is swept up in an insane adventure, where she alone can save what's important to her by connecting with the lives she could have led in other universes.",
+    director: "Daniels",
+    cast: ["Michelle Yeoh", "Stephanie Hsu", "Ke Huy Quan"],
+    streamingUrl: "https://www.amazon.com/prime"
+  },
+  {
+    id: 7,
+    title: "Doctor Strange in the Multiverse of Madness",
+    image: doctorStrange2,
+    year: "2022",
+    rating: "6.9",
+    genre: "Action",
+    type: "movie",
+    runtime: "2h 6m",
+    description: "Dr. Stephen Strange casts a forbidden spell that opens the doorway to the multiverse, including alternate versions of himself, whose threat to humanity is too great for the combined forces of Strange, Wong, and Wanda Maximoff.",
+    director: "Sam Raimi",
+    cast: ["Benedict Cumberbatch", "Elizabeth Olsen", "Chiwetel Ejiofor"],
+    streamingUrl: "https://www.disneyplus.com"
+  },
+  {
+    id: 8,
     title: "Dune: Part Two",
     image: dunePartTwo,
     year: "2024",
@@ -26,10 +138,10 @@ export const moviesData: Movie[] = [
     description: "Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family.",
     director: "Denis Villeneuve",
     cast: ["Timothée Chalamet", "Zendaya", "Rebecca Ferguson"],
-    trailer: "https://www.youtube.com/watch?v=Way9Dexny3w"
+    streamingUrl: "https://www.max.com"
   },
   {
-    id: 2,
+    id: 9,
     title: "Oppenheimer",
     image: oppenheimer,
     year: "2023",
@@ -40,10 +152,10 @@ export const moviesData: Movie[] = [
     description: "The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb.",
     director: "Christopher Nolan",
     cast: ["Cillian Murphy", "Emily Blunt", "Robert Downey Jr."],
-    trailer: "https://www.youtube.com/watch?v=uYPbbksJxIg"
+    streamingUrl: "https://www.amazon.com/prime"
   },
   {
-    id: 3,
+    id: 10,
     title: "Barbie",
     image: barbie,
     year: "2023",
@@ -54,10 +166,10 @@ export const moviesData: Movie[] = [
     description: "Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land.",
     director: "Greta Gerwig",
     cast: ["Margot Robbie", "Ryan Gosling", "America Ferrera"],
-    trailer: "https://www.youtube.com/watch?v=pBk4NYhWNMM"
+    streamingUrl: "https://www.max.com"
   },
   {
-    id: 4,
+    id: 11,
     title: "Spider-Man: Across the Spider-Verse",
     image: spiderVerse,
     year: "2023",
@@ -68,10 +180,10 @@ export const moviesData: Movie[] = [
     description: "Miles Morales catapults across the Multiverse, where he encounters a team of Spider-People charged with protecting its very existence.",
     director: "Joaquim Dos Santos",
     cast: ["Shameik Moore", "Hailee Steinfeld", "Brian Tyree Henry"],
-    trailer: "https://www.youtube.com/watch?v=cqGjhVJWtEg"
+    streamingUrl: "https://www.netflix.com"
   },
   {
-    id: 5,
+    id: 12,
     title: "John Wick: Chapter 4",
     image: johnWick4,
     year: "2023",
@@ -82,55 +194,106 @@ export const moviesData: Movie[] = [
     description: "John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy.",
     director: "Chad Stahelski",
     cast: ["Keanu Reeves", "Donnie Yen", "Bill Skarsgård"],
-    trailer: "https://www.youtube.com/watch?v=qEVUtrk8_B4"
+    streamingUrl: "https://www.amazon.com/prime"
   },
   {
-    id: 6,
-    title: "Fast X",
-    image: heroImage,
-    year: "2023",
-    rating: "5.8",
+    id: 13,
+    title: "Baahubali 2: The Conclusion",
+    image: bahubali2,
+    year: "2017",
+    rating: "8.2",
     genre: "Action",
     type: "movie",
-    runtime: "2h 21m",
-    description: "Dom Toretto and his family are targeted by the vengeful son of drug kingpin Hernan Reyes.",
-    director: "Louis Leterrier",
-    cast: ["Vin Diesel", "Michelle Rodriguez", "Jason Statham"],
-    trailer: "https://www.youtube.com/watch?v=32RAq6JzY-w"
+    runtime: "2h 47m",
+    description: "When Shiva, the son of Bahubali, learns about his heritage, he begins to look for answers. His story is juxtaposed with past events that unfolded in the Mahishmati Kingdom.",
+    director: "S.S. Rajamouli",
+    cast: ["Prabhas", "Rana Daggubati", "Anushka Shetty"],
+    streamingUrl: "https://www.amazon.com/prime"
   },
   {
-    id: 7,
-    title: "Scream VI",
-    image: heroImage,
-    year: "2023",
+    id: 14,
+    title: "Minions: The Rise of Gru",
+    image: minionsRiseOfGru,
+    year: "2022",
     rating: "6.5",
-    genre: "Horror",
-    type: "movie",
-    runtime: "2h 3m",
-    description: "The survivors of the Ghostface killings leave Woodsboro behind and start a fresh chapter in New York City.",
-    director: "Matt Bettinelli-Olpin",
-    cast: ["Melissa Barrera", "Jenna Ortega", "Jasmin Savoy Brown"],
-    trailer: "https://www.youtube.com/watch?v=h74AXqw4Opc"
-  },
-  {
-    id: 8,
-    title: "The Little Mermaid",
-    image: heroImage,
-    year: "2023",
-    rating: "7.2",
     genre: "Family",
     type: "movie",
-    runtime: "2h 15m",
-    description: "A young mermaid makes a deal with a sea witch to trade her beautiful voice for human legs.",
-    director: "Rob Marshall",
-    cast: ["Halle Bailey", "Jonah Hauer-King", "Daveed Diggs"],
-    trailer: "https://www.youtube.com/watch?v=kpGo2_d3oYE"
+    runtime: "1h 27m",
+    description: "The untold story of one twelve-year-old's dream to become the world's greatest supervillain.",
+    director: "Kyle Balda",
+    cast: ["Steve Carell", "Pierre Coffin", "Alan Arkin"],
+    streamingUrl: "https://www.peacocktv.com"
   }
 ];
 
 export const tvShowsData: Movie[] = [
   {
     id: 101,
+    title: "Squid Game",
+    image: squidGame,
+    year: "2021",
+    rating: "8.0",
+    genre: "Thriller",
+    type: "tv",
+    runtime: "60min",
+    description: "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits with deadly high stakes.",
+    cast: ["Lee Jung-jae", "Park Hae-soo", "Wi Ha-jun"],
+    streamingUrl: "https://www.netflix.com"
+  },
+  {
+    id: 102,
+    title: "Money Heist (La Casa de Papel)",
+    image: moneyHeist,
+    year: "2017",
+    rating: "8.2",
+    genre: "Crime",
+    type: "tv",
+    runtime: "50min",
+    description: "An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - stealing 2.4 billion euros from the Royal Mint of Spain.",
+    cast: ["Úrsula Corberó", "Álvaro Morte", "Itziar Ituño"],
+    streamingUrl: "https://www.netflix.com"
+  },
+  {
+    id: 103,
+    title: "Breaking Bad",
+    image: breakingBad,
+    year: "2008",
+    rating: "9.5",
+    genre: "Crime",
+    type: "tv",
+    runtime: "47min",
+    description: "A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future.",
+    cast: ["Bryan Cranston", "Aaron Paul", "Anna Gunn"],
+    streamingUrl: "https://www.netflix.com"
+  },
+  {
+    id: 104,
+    title: "Mirzapur",
+    image: mirzapur,
+    year: "2018",
+    rating: "8.4",
+    genre: "Crime",
+    type: "tv",
+    runtime: "45min",
+    description: "A shocking incident at a wedding procession ignites a series of events entangling the lives of two families in the lawless city of Mirzapur.",
+    cast: ["Pankaj Tripathi", "Ali Fazal", "Vikrant Massey"],
+    streamingUrl: "https://www.primevideo.com"
+  },
+  {
+    id: 105,
+    title: "Scam 1992: The Harshad Mehta Story",
+    image: scam1992,
+    year: "2020",
+    rating: "9.5",
+    genre: "Biography",
+    type: "tv",
+    runtime: "50min",
+    description: "Set in 1980s and 90s Bombay, it follows the life of Harshad Mehta, a stockbroker who took the stock market to dizzying heights and his catastrophic downfall.",
+    cast: ["Pratik Gandhi", "Shreya Dhanwanthary", "Hemant Kher"],
+    streamingUrl: "https://www.sonyliv.com"
+  },
+  {
+    id: 106,
     title: "Wednesday",
     image: wednesday,
     year: "2022",
@@ -140,10 +303,10 @@ export const tvShowsData: Movie[] = [
     runtime: "45min",
     description: "Follows Wednesday Addams' years as a student at Nevermore Academy, where she attempts to master her emerging psychic ability.",
     cast: ["Jenna Ortega", "Hunter Doohan", "Percy Hynes White"],
-    trailer: "https://www.youtube.com/watch?v=Di310WS8zLk"
+    streamingUrl: "https://www.netflix.com"
   },
   {
-    id: 102,
+    id: 107,
     title: "House of the Dragon",
     image: houseOfDragon,
     year: "2022",
@@ -153,10 +316,10 @@ export const tvShowsData: Movie[] = [
     runtime: "60min",
     description: "An internal succession war within House Targaryen at the height of its power, 172 years before the birth of Daenerys Targaryen.",
     cast: ["Paddy Considine", "Emma D'Arcy", "Matt Smith"],
-    trailer: "https://www.youtube.com/watch?v=DotnJ7tTA34"
+    streamingUrl: "https://www.hbomax.com"
   },
   {
-    id: 103,
+    id: 108,
     title: "Stranger Things",
     image: strangerThings,
     year: "2016",
@@ -166,10 +329,10 @@ export const tvShowsData: Movie[] = [
     runtime: "50min",
     description: "When a young boy disappears, his mother, a police chief and his friends must confront terrifying supernatural forces.",
     cast: ["Millie Bobby Brown", "Finn Wolfhard", "Winona Ryder"],
-    trailer: "https://www.youtube.com/watch?v=b9EkMc79ZSU"
+    streamingUrl: "https://www.netflix.com"
   },
   {
-    id: 104,
+    id: 109,
     title: "The Bear",
     image: theBear,
     year: "2022",
@@ -179,10 +342,10 @@ export const tvShowsData: Movie[] = [
     runtime: "30min",
     description: "A young chef from the fine dining world returns to Chicago to run his family's sandwich shop.",
     cast: ["Jeremy Allen White", "Ebon Moss-Bachrach", "Abby Elliott"],
-    trailer: "https://www.youtube.com/watch?v=y-cqqAJIXhs"
+    streamingUrl: "https://www.hulu.com"
   },
   {
-    id: 105,
+    id: 110,
     title: "The Last of Us",
     image: theLastOfUs,
     year: "2023",
@@ -192,46 +355,7 @@ export const tvShowsData: Movie[] = [
     runtime: "60min",
     description: "Joel and Ellie, a pair connected through the harshness of the world they live in, are forced to survive under threatening circumstances.",
     cast: ["Pedro Pascal", "Bella Ramsey", "Anna Torv"],
-    trailer: "https://www.youtube.com/watch?v=uLtkt8BonwM"
-  },
-  {
-    id: 106,
-    title: "Abbott Elementary",
-    image: heroImage,
-    year: "2021",
-    rating: "8.2",
-    genre: "Comedy",
-    type: "tv",
-    runtime: "22min",
-    description: "A mockumentary sitcom following a group of teachers in an underfunded Philadelphia elementary school.",
-    cast: ["Quinta Brunson", "Tyler James Williams", "Janelle James"],
-    trailer: "https://www.youtube.com/watch?v=cHVHBnFxceI"
-  },
-  {
-    id: 107,
-    title: "Succession",
-    image: heroImage,
-    year: "2018",
-    rating: "8.8",
-    genre: "Drama",
-    type: "tv",
-    runtime: "60min",
-    description: "The Roy family is known for controlling the biggest media and entertainment company in the world.",
-    cast: ["Jeremy Strong", "Sarah Snook", "Kieran Culkin"],
-    trailer: "https://www.youtube.com/watch?v=77PsqaWzwG0"
-  },
-  {
-    id: 108,
-    title: "You",
-    image: heroImage,
-    year: "2018",
-    rating: "7.7",
-    genre: "Thriller",
-    type: "tv",
-    runtime: "45min",
-    description: "A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself into the lives of those he is transfixed by.",
-    cast: ["Penn Badgley", "Victoria Pedretti", "Elizabeth Lail"],
-    trailer: "https://www.youtube.com/watch?v=srDXvt6_QAM"
+    streamingUrl: "https://www.hbomax.com"
   }
 ];
 
