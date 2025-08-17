@@ -1,4 +1,4 @@
-import { Home, Film, Tv, Star, Bookmark, Clock, Settings, Filter } from "lucide-react";
+import { Home, Film, Tv, Bookmark, Clock, Settings, Filter } from "lucide-react";
 import { NavLink, useLocation } from "react-router-dom";
 import {
   Sidebar,
@@ -18,7 +18,6 @@ const navigationItems = [
   { title: "Home", url: "/", icon: Home },
   { title: "Movies", url: "/movies", icon: Film },
   { title: "TV Shows", url: "/shows", icon: Tv },
-  { title: "Favorites", url: "/favorites", icon: Star },
   { title: "Watchlist", url: "/watchlist", icon: Bookmark },
   { title: "Recently Watched", url: "/recent", icon: Clock },
 ];

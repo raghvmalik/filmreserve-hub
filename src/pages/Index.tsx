@@ -29,12 +29,6 @@ const Index = () => {
           size="medium" 
         />
         
-        {/* Dune Universe */}
-        <MovieSection 
-          title="Dune Universe" 
-          movies={moviesData.filter(movie => ['Dune: Part Two'].includes(movie.title))} 
-          size="medium" 
-        />
         
         {/* John Wick Universe */}
         <MovieSection 

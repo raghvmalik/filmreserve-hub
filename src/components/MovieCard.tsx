@@ -1,4 +1,4 @@
-import { Play, Plus, ThumbsUp, Info, Check } from "lucide-react";
+import { Play, Plus, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { useWatchlist, Movie } from "@/contexts/WatchlistContext";
@@ -87,9 +87,6 @@ const MovieCard = ({
                   <Plus className="h-4 w-4" />
                 )}
               </Button>
-              <Button size="sm" variant="secondary" className="px-3">
-                <ThumbsUp className="h-4 w-4" />
-              </Button>
             </div>
             
             {/* Movie Info */}
@@ -97,10 +94,6 @@ const MovieCard = ({
               <h3 className="font-semibold text-sm truncate">{title}</h3>
               <div className="flex items-center space-x-2 text-xs text-white/80">
                 <span>{year}</span>
-                <span>•</span>
-                <span className="bg-streaming-gold text-black px-1.5 py-0.5 rounded text-xs font-medium">
-                  {rating}
-                </span>
                 <span>•</span>
                 <span>{genre}</span>
               </div>
@@ -110,12 +103,6 @@ const MovieCard = ({
             </div>
           </div>
 
-          {/* Rating badge (always visible) */}
-          <div className="absolute top-2 right-2">
-            <span className="bg-streaming-gold text-black px-2 py-1 rounded text-xs font-bold">
-              {rating}
-            </span>
-          </div>
         </div>
       </CardContent>
     </Card>

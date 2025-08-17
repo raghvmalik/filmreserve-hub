@@ -1,130 +1,122 @@
-import { Play, Info, Volume2, VolumeX } from "lucide-react";
+import { ChevronLeft, ChevronRight, Play, Info } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useState, useRef } from "react";
-import heroBanner from "@/assets/dune-part-two-correct.jpg";
+import { useMemo, useState } from "react";
 
 const HeroSection = () => {
-  const [isMuted, setIsMuted] = useState(true);
-  const [showTrailer, setShowTrailer] = useState(false);
-  const videoRef = useRef<HTMLIFrameElement>(null);
+  const slides = useMemo(
+    () => [
+      {
+        title: "Man of Steel",
+        description:
+          "Clark Kent embraces his destiny to become Superman and protect Earth from a vengeful General Zod.",
+        query: "Man of Steel 2013 official trailer",
+      },
+      {
+        title: "Superman",
+        description: "A bold new chapter for the Last Son of Krypton in the DC Universe.",
+        query: "Superman 2025 official trailer DC",
+      },
+      {
+        title: "F1",
+        description: "High-octane racing cinema from the world of Formula 1.",
+        query: "F1 movie official teaser trailer",
+      },
+      {
+        title: "Fantastic Four: First Steps",
+        description: "Marvel's First Family returns in a brand-new adventure.",
+        query: "Fantastic Four First Steps official teaser trailer",
+      },
+      {
+        title: "28 Years Later",
+        description: "A terrifying return to a world overrun by rage.",
+        query: "28 Years Later official trailer",
+      },
+      {
+        title: "Jurassic World: Rebirth",
+        description: "Dinosaurs roam once again in a new era of survival.",
+        query: "Jurassic World Rebirth official trailer",
+      },
+    ],
+    []
+  );
 
-  const handlePlayTrailer = () => {
-    setShowTrailer(true);
-  };
+  const [index, setIndex] = useState(0);
 
-  const handlePlayMovie = () => {
-    window.open("https://archive.org/details/movies", "_blank");
-  };
+  const current = slides[index];
+  const trailerSrc = `https://www.youtube.com/embed?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&listType=search&list=${encodeURIComponent(
+    current.query
+  )}`;
+
+  const prev = () => setIndex((i) => (i - 1 + slides.length) % slides.length);
+  const next = () => setIndex((i) => (i + 1) % slides.length);
 
   return (
     <section className="relative h-[70vh] w-full overflow-hidden">
-      {/* Background Image/Video */}
+      {/* Trailer Video */}
       <div className="absolute inset-0">
-        {showTrailer ? (
-          <iframe
-            ref={videoRef}
-            src="https://www.youtube.com/embed/Way9Dexny3w?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1"
-            className="w-full h-full object-cover"
-            frameBorder="0"
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-          />
-        ) : (
-          <>
-            <img
-              src={heroBanner}
-              alt="Dune: Part Two"
-              className="w-full h-full object-cover"
-            />
-            {/* Gradient Overlays */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-          </>
-        )}
+        <iframe
+          key={index}
+          src={trailerSrc}
+          className="w-full h-full object-cover"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+          title={`${current.title} Trailer`}
+        />
+        {/* Gradient Overlays */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
       </div>
 
       {/* Content */}
       <div className="relative z-10 h-full flex items-center">
         <div className="container mx-auto px-6">
           <div className="max-w-2xl space-y-6">
-            {/* Title */}
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
-              {showTrailer ? (
-                <>
-                  Dune:
-                  <span className="block bg-gradient-accent bg-clip-text text-transparent">
-                    Part Two
-                  </span>
-                </>
-              ) : (
-                <>
-                  Epic
-                  <span className="block bg-gradient-accent bg-clip-text text-transparent">
-                    Adventure
-                  </span>
-                </>
-              )}
+              {current.title}
             </h1>
-
-            {/* Description */}
             <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-xl">
-              {showTrailer ? (
-                "Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family. Watch the epic conclusion now."
-              ) : (
-                "Join the ultimate quest in this breathtaking adventure that will take you to worlds beyond imagination. Now streaming exclusively on FilmReserve."
-              )}
+              {current.description}
             </p>
 
-            {/* Movie Details */}
-            <div className="flex items-center space-x-4 text-white/80">
-              <span className="bg-streaming-gold text-black px-3 py-1 rounded font-bold text-sm">
-                8.8
-              </span>
-              <span>2024</span>
-              <span>•</span>
-              <span>2h 46m</span>
-              <span>•</span>
-              <span>Sci-Fi, Adventure</span>
-            </div>
-
             {/* Action Buttons */}
-            <div className="flex space-x-4 pt-4">
-              <Button 
-                size="lg" 
+            <div className="flex space-x-4 pt-2">
+              <Button
+                size="lg"
                 className="hero-button px-8 py-3 text-lg"
-                onClick={handlePlayMovie}
+                onClick={() => window.open(`https://www.youtube.com/results?search_query=${encodeURIComponent(current.query)}`, "_blank")}
               >
                 <Play className="h-6 w-6 mr-2" />
-                Play Now
+                Watch Trailer
               </Button>
-              <Button 
-                size="lg" 
-                variant="secondary" 
+              <Button
+                size="lg"
+                variant="secondary"
                 className="px-8 py-3 text-lg bg-white/20 text-white border-white/30 hover:bg-white/30"
-                onClick={handlePlayTrailer}
+                onClick={() => next()}
               >
                 <Info className="h-6 w-6 mr-2" />
-                {showTrailer ? "Hide Trailer" : "Watch Trailer"}
+                More Info
               </Button>
             </div>
           </div>
         </div>
 
-        {/* Volume Control */}
-        <div className="absolute bottom-6 right-6">
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={() => setIsMuted(!isMuted)}
-            className="text-white/70 hover:text-white bg-black/20 hover:bg-black/40 border border-white/20"
-          >
-            {isMuted ? (
-              <VolumeX className="h-5 w-5" />
-            ) : (
-              <Volume2 className="h-5 w-5" />
-            )}
-          </Button>
-        </div>
+        {/* Carousel Controls */}
+        <button
+          aria-label="Previous trailer"
+          onClick={prev}
+          className="absolute left-4 top-1/2 -translate-y-1/2 grid place-items-center h-12 w-12 rounded-full bg-black/40 hover:bg-black/60 text-white border border-white/20"
+        >
+          <ChevronLeft className="h-6 w-6" />
+        </button>
+        <button
+          aria-label="Next trailer"
+          onClick={next}
+          className="absolute right-4 top-1/2 -translate-y-1/2 grid place-items-center h-12 w-12 rounded-full bg-black/40 hover:bg-black/60 text-white border border-white/20"
+        >
+          <ChevronRight className="h-6 w-6" />
+        </button>
       </div>
     </section>
   );
